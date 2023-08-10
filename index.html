@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="author" content="Haruna Codes">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="https://icons.veryicon.com/png/o/miscellaneous/simple-icon/exchange-14.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://icons.veryicon.com/png/o/miscellaneous/simple-icon/exchange-14.png">
+  <link rel="icon" sizes="16x16" href="https://icons.veryicon.com/png/o/miscellaneous/simple-icon/exchange-14.png">
+
+
+  <title>Currency converter</title>
+  <meta name="description" content="Currency converter.">
+
+  <link rel="stylesheet" href="dependencies/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+
+</head>
+<body>
+  <script src="dependencies/jquery-3.1.1/js/jquery-3.1.1.min.js"></script>
+  <script src="dependencies/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="dependencies/accounting-js-open-exchange-rates/accounting.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- START NAVBAR -->
+  <nav id="main-nav">
+    <span class="#">Currency Converter <i class="fa fa-exchange" aria-hidden="true"></i></span>
+    <!--START BOOTSTRAP DROPDOWN -->
+    <span class="dropdown" id="contactMenu">
+      <button class="btn-default dropdown-toggle nav-drop-btn visible-xs-inline" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Contact
+      <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="dropdownToggle"><!--
+      --><li class="menu-item"><a href="https://my-portfolio-three-self.vercel.app/" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i> Portfolio</a></li><!--
+      --><li class="menu-item"><a class="linkedin-link" href="https://www.linkedin.com/in/mohammed-idris-haruna-85836525a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BvhjIz6KcRdeoD4DihhuHFA%3D%3D" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li><!--
+        --><li class="menu-item"><a href="https://github.com/harunacodes790" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i> GitHub</a></li><!--
+      --></ul><!--
+    --></span><!--
+     END  BOOTSTRAP DROPDOWN (comment above prevent inline white spaces)
+    -->
+  </nav>
+  <!-- END NAVBAR -->
+
+  <!-- START MAIN HEADER & LOADING ICON -->
+  <header id="main-header" class="center">
+    <h1>Currency Converter</h1>
+  </header>
+  <section class="loading center">
+    <i class="fa fa-spinner fa-spin fa-5x fa-fw"></i>
+    <h4>Loading...</h4>
+  </section>
+  <!-- END MAIN HEADER & LOADING ICON -->
+  <!-- START CONVERTER SECTION -->
+  <section class="converter center">
+    <header>
+      <h2>Convert a currency</h2>
+    </header>
+    <form action="">
+      <label for="from-currency-amount">Convert from</label>
+
+      <div>
+        <input class="form-in inline-md center" type="text" id="from-currency-amount" placeholder="input amount" tabindex="1" />
+        <div class="styled-select inline-md">
+          <select id="from-currency" class="currencylist" tabindex="2">
+          </select>
+        </div>
+      </div>
+
+      <label for="to-currency">Convert to</label>
+
+      <div>
+        <input class="form-in inline-md center" type="text" id="answer-currency-amount" placeholder="converted amount" tabindex="5" />
+        <div class="styled-select inline-md">
+          <select id="to-currency" class="currencylist" tabindex="3">
+        </select>
+        </div>
+      </div>
+      <button id="convert-btn" class="form-btn" tabindex="4">Convert</button>
+
+    </form>
+  </section>
+ 
+  <!-- START FOOTER -->
+  <footer id="main-footer">
+    <p>
+      Designed by <a href="#" target="_blank">Haruna Codes</a>
+    </p>
+  </footer>
+  <!-- END FOOTER -->
+</body>
+</html>
